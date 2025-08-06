@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center; border: 1px solid ; width: 500PX;margin-left: 500PX; margin-top: 200px;">
+        <h2>May Tinh cam tay</h2>
+        <div>
+            <input style="padding: 15px 6px;" id="num1" type="text" placeholder="Nhap so thu 1">
+            <input style="padding: 15px 6px;" id="num2" type="text" placeholder="Nhap so thu 2">
+        </div>
+        <br>
+        <div style="display: flex; gap: 20px;justify-content: center;">
+            <button onclick="calculate(`+`)">+</button>
+            <button onclick="calculate(`-`)">-</button> 
+            <button onclick="calculate(`*`)">*</button>
+            <button onclick="calculate(`/`)">/</button>
+            <button onclick="calculate(`^`)">^</button>
+            <button onclick="calculate(`√`)">√</button>
+            <button onclick="calculate(`!`)">!</button>
+        </div>
+        <p id="result"></p>
+    </div>
+
+    <script src="/dist/b9ss3.js"></script>
+</body>
+</html>
