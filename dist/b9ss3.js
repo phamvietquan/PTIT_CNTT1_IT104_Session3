@@ -8,16 +8,16 @@ const sqrt = (base, root) => Math.pow(base, 1 / root);
 const fibonaci = (n) => {
     if (n < 0 || !Number.isInteger(n))
         return NaN;
-    let result = 1;
+    let relust = 1;
     for (let i = 2; i <= n; i++) {
-        result *= i;
+        relust *= i;
     }
-    return result;
+    return relust;
 };
 function calculate(operator) {
-    const input1 = document.getElementById("input1").value;
-    const input2 = document.getElementById("input2").value;
-    const resultElement = document.getElementById("result");
+    const input1 = document.getElementById("num1").value;
+    const input2 = document.getElementById("num2").value;
+    const resultElement = document.getElementById("relust");
     const num1 = Number(input1);
     const num2 = Number(input2);
     if ((input1 !== "" && isNaN(num1)) || (input2 !== "" && isNaN(num2))) {

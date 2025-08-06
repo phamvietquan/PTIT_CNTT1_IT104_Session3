@@ -13,9 +13,9 @@
         return relust;
     }   
     function calculate( operator : string){
-        const input1 = (document.getElementById("input1") as HTMLInputElement).value;
-        const input2 = (document.getElementById("input2") as HTMLInputElement).value;
-        const resultElement = document.getElementById("relust");
+        const input1 = (document.getElementById("num1") as HTMLInputElement).value;
+        const input2 = (document.getElementById("num2") as HTMLInputElement).value;
+        const resultElement = document.getElementById("relust") as HTMLElement;
 
         const num1 = Number(input1);
         const num2 = Number(input2);
@@ -53,5 +53,4 @@
             result = "Phép tính không hợp lệ!";
         }
         resultElement!.textContent = `Kết quả: ${result}`;
-    
     }
