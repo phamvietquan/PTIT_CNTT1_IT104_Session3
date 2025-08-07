@@ -17,7 +17,7 @@ const fibonaci = (n) => {
 function calculate(operator) {
     const input1 = document.getElementById("num1").value;
     const input2 = document.getElementById("num2").value;
-    const resultElement = document.getElementById("relust");
+    const resultElement = document.getElementById("result");
     const num1 = Number(input1);
     const num2 = Number(input2);
     if ((input1 !== "" && isNaN(num1)) || (input2 !== "" && isNaN(num2))) {
@@ -50,5 +50,5 @@ function calculate(operator) {
         default:
             result = "Phép tính không hợp lệ!";
     }
-    resultElement.textContent = `Kết quả: ${result}`;
+    resultElement.textContent = `Kết quả: ${result.toString()}`;
 }

@@ -15,11 +15,11 @@
     function calculate( operator : string){
         const input1 = (document.getElementById("num1") as HTMLInputElement).value;
         const input2 = (document.getElementById("num2") as HTMLInputElement).value;
-        const resultElement = document.getElementById("relust") as HTMLElement;
+        const resultElement = document.getElementById("result") as HTMLElement;
 
         const num1 = Number(input1);
         const num2 = Number(input2);
-
+        
         if ((input1 !== "" && isNaN(num1)) || (input2 !== "" && isNaN(num2))) {
         resultElement!.textContent = "Lỗi: Vui lòng nhập số hợp lệ.";
         return;
@@ -52,5 +52,5 @@
         default:
             result = "Phép tính không hợp lệ!";
         }
-        resultElement!.textContent = `Kết quả: ${result}`;
+        resultElement.textContent = `Kết quả: ${result.toString()}`;
     }
